@@ -6,6 +6,7 @@ const sendButton = document.getElementById('send-btn');
 
 sendButton.addEventListener('click', function(){
     let inputValue = document.getElementById('email').value;
+    console.log('The Email address entered is: ', inputValue);
     let trueValue;
     let confirmElement = document.getElementById('confirm');
 
@@ -21,6 +22,7 @@ sendButton.addEventListener('click', function(){
     }else {
         confirmElement.innerHTML = 'Email address could not be found'
     }
+    console.log ('Result: ', confirmElement.innerHTML);
 });
 
 
